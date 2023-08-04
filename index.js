@@ -159,7 +159,7 @@ bcrypt.hash(password,4, async function(err,hash){
         to: email,
         subject: "Email Verification",
         html: `Hello!\n\nPlease verify your email by clicking the following link: 
-          http://localhost:8000/verify/${verificationToken}`,
+          https://clickserver.onrender.com/verify/${verificationToken}`,
       };   
       transporter.sendMail(mailOptions,async (error, info) => {
         if (error) {
